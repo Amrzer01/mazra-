@@ -1,0 +1,240 @@
+/* 
+  Happy Farm (المزرعة السعيدة) - Egypt Farm Expeditions & Luxor Hot Air Balloon
+  Awwwards-Winning Luxury Agritourism Motion Styling with High-End Arabic Typography
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@300;400;600;700;800;900&family=Marhey:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Readex+Pro:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-dark: #07150B;
+  --primary-forest: #0D2313;
+  --primary-green: #1F5F29;
+  --accent-green: #4ADE80;
+  --accent-gold: #F59E0B;
+  --accent-amber: #FCD34D;
+  --accent-terracotta: #C86D51;
+  --accent-balloon: #FF764D;
+  --bg-cream: #FAF7F2;
+  --bg-sand: #F3ECE1;
+  --text-dark: #111A13;
+  --text-muted: #5A6D5E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #07150B;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F5F29;
+  border-radius: 999px;
+  border: 2px solid #07150B;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4ADE80;
+}
+
+/* Professional Arabic Typography Rules */
+body {
+  font-family: 'Readex Pro', 'Cairo', -apple-system, sans-serif;
+  letter-spacing: normal;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+[dir="rtl"] {
+  font-family: 'Readex Pro', 'Cairo', sans-serif;
+  letter-spacing: normal !important;
+  word-spacing: 0.02em;
+}
+[dir="rtl"] * {
+  letter-spacing: normal !important;
+}
+
+[dir="rtl"] h1, 
+[dir="rtl"] h2, 
+[dir="rtl"] h3, 
+[dir="rtl"] h4, 
+[dir="rtl"] .font-arabic-heading {
+  letter-spacing: normal !important;
+  line-height: 1.4 !important;
+  word-spacing: 0.02em;
+}
+
+[dir="rtl"] p {
+  line-height: 1.85 !important;
+  letter-spacing: normal !important;
+}
+
+[dir="ltr"] {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-arabic-heading {
+  font-family: 'Readex Pro', 'Cairo', sans-serif;
+  letter-spacing: 0 !important;
+  line-height: 1.35;
+}
+
+.font-arabic-accent {
+  font-family: 'Marhey', 'Readex Pro', cursive, sans-serif;
+  line-height: 1.35;
+}
+
+.font-arabic-classical {
+  font-family: 'Amiri', 'Cairo', serif;
+  line-height: 1.95;
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', 'Amiri', serif;
+}
+
+/* Noise & Texture Overlay */
+.film-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* Liquid Glass Effects */
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25), inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.liquid-glass-dark {
+  background: rgba(7, 21, 11, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(74, 222, 128, 0.18);
+  box-shadow: 0 16px 45px 0 rgba(0, 0, 0, 0.55), inset 0 1px 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.liquid-glass-gold {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(200, 109, 81, 0.08));
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.15);
+}
+
+.liquid-glass-balloon {
+  background: linear-gradient(135deg, rgba(255, 118, 77, 0.18), rgba(245, 158, 11, 0.12));
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 118, 77, 0.35);
+  box-shadow: 0 15px 40px rgba(255, 118, 77, 0.2);
+}
+
+/* Magnetic Glow */
+.glow-green {
+  box-shadow: 0 0 35px -5px rgba(74, 222, 128, 0.35);
+}
+.glow-gold {
+  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.4);
+}
+.glow-balloon {
+  box-shadow: 0 0 40px -5px rgba(255, 118, 77, 0.45);
+}
+
+/* Animated Shimmer Line */
+.shimmer-badge {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer-badge::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 70%
+  );
+  transform: rotate(30deg);
+  animation: shimmerMove 4s infinite linear;
+}
+
+@keyframes shimmerMove {
+  0% { transform: translateX(-100%) rotate(30deg); }
+  100% { transform: translateX(100%) rotate(30deg); }
+}
+
+/* Balloon Float Animation */
+@keyframes balloonFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  35% { transform: translateY(-16px) rotate(1.5deg); }
+  70% { transform: translateY(-8px) rotate(-1.5deg); }
+}
+
+.animate-balloon {
+  animation: balloonFloat 6s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes pulseLeaf {
+  0%, 100% { transform: scale(1); opacity: 0.95; }
+  50% { transform: scale(1.05); opacity: 1; }
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-pulse-leaf {
+  animation: pulseLeaf 3s ease-in-out infinite;
+}
+
+/* Card 3D tilt perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-gpu {
+  transform-style: preserve-3d;
+  transition: transform 0.2s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+/* Interactive Cursor */
+.custom-cursor {
+  pointer-events: none;
+  position: fixed;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid #4ADE80;
+  transition: transform 0.12s ease-out, opacity 0.2s, border-color 0.2s;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+.custom-cursor-dot {
+  pointer-events: none;
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #4ADE80;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1024px) {
+  .custom-cursor, .custom-cursor-dot {
+    display: none !important;
+  }
+}
